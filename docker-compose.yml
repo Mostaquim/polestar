@@ -24,8 +24,10 @@ services:
       - db
   serve:
     build: .
-    command: python /serve/serve.py
+    command: python /code/serve/serve.py
     depends_on:
       - backend
+    ports:
+      - 3000:3000
 volumes:
   postgres_data:

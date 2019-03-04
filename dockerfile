@@ -16,4 +16,4 @@ RUN pipenv install --system
 # Copy backend
 COPY ./backend/ /code/
 
-COPY ./serve/ /serve/
+COPY ./serve/ /code/serve/
